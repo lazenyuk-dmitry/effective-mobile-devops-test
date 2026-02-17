@@ -2,6 +2,8 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+ENV PYTHONDONTWRITEBYTECODE=1
+
 # Создаём непривилегированного пользователя
 RUN useradd -m appuser
 
